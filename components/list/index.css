@@ -1,0 +1,221 @@
+/*.ant-btn:focus, .ant-btn:hover,.ant-input:focus, .ant-input:hover {
+    background-color: #fff;
+    border-color: #bf1616;
+    box-shadow: 0 0 0 2px rgba(191, 22, 22, 0.1);
+}*/
+.lt-full {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.zmiti-text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis; }
+
+.zmiti-play {
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 1000;
+  right: .5rem;
+  top: .5rem; }
+  .zmiti-play.rotate {
+    -webkit-animation: rotate 5s linear infinite;
+    animation: rotate 5s linear infinite; }
+
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+body {
+  overflow: hidden; }
+
+.zmiti-list-main-ui {
+  width: 750px;
+  overflow: hidden;
+  z-index: 12;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  perspective: 800px;
+  -webkit-perspective: 800px; }
+  .zmiti-list-main-ui .zmiti-floor {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 4; }
+  .zmiti-list-main-ui .zmiti-cloud {
+    position: absolute;
+    top: 10vh;
+    z-index: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-animation: scale1 10s linear infinite;
+    animation: scale1 10s linear infinite; }
+  .zmiti-list-main-ui .zmiti-cloud1 {
+    top: 10vh;
+    -webkit-animation: scale1 10s 3s linear infinite;
+    animation: scale1 10s 3s linear infinite; }
+  .zmiti-list-main-ui .zmiti-cloud2 {
+    top: 17vh;
+    -webkit-animation: scale1 10s 5s linear infinite;
+    animation: scale1 10s 5s linear infinite; }
+  .zmiti-list-main-ui .zmiti-cloud3 {
+    top: 28vh;
+    -webkit-animation: scale1 10s 6s linear infinite;
+    animation: scale1 10s 6s linear infinite; }
+  .zmiti-list-main-ui .zmiti-timeline {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    top: 35%;
+    left: 3rem;
+    z-index: 3;
+    -webkit-animation: scale2 10s linear infinite;
+    animation: scale2 10s linear infinite; }
+  .zmiti-list-main-ui .zmiti-timeline1 {
+    position: absolute;
+    width: 9rem;
+    height: 9rem;
+    top: 20%;
+    left: .5rem;
+    z-index: 3;
+    -webkit-animation: scale2 7s 1s linear infinite;
+    animation: scale2 7s 1s linear infinite; }
+  .zmiti-list-main-ui .zmiti-timeline2 {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 42%;
+    left: 4rem;
+    z-index: 3;
+    -webkit-animation: scale2 5s 1s linear infinite;
+    animation: scale2 5s 1s linear infinite; }
+  .zmiti-list-main-ui .zmiti-img {
+    position: absolute;
+    z-index: 4;
+    width: 8rem;
+    left: 1rem;
+    top: 22%;
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1); }
+  .zmiti-list-main-ui .zmiti-title {
+    width: 4rem;
+    position: absolute;
+    bottom: 4rem;
+    left: 3rem;
+    z-index: 20; }
+    .zmiti-list-main-ui .zmiti-title.title-enter-active, .zmiti-list-main-ui .zmiti-title.title-leave-active {
+      -webkit-transition: 2s;
+      transition: 2s; }
+    .zmiti-list-main-ui .zmiti-title.title-enter, .zmiti-list-main-ui .zmiti-title.title-leave-to {
+      -webkit-transform: scale(3);
+      transform: scale(3);
+      opacity: 0; }
+  .zmiti-list-main-ui .zmiti-entry {
+    width: 2rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 4rem;
+    z-index: 30;
+    -webkit-animation: scale 1s linear infinite alternate;
+    animation: scale 1s linear infinite alternate; }
+  .zmiti-list-main-ui .zmiti-info {
+    position: absolute;
+    width: 3rem;
+    left: .4rem;
+    top: .4rem;
+    z-index: 10; }
+  .zmiti-list-main-ui .zmiti-sun {
+    position: absolute;
+    z-index: 2;
+    width: 5rem;
+    top: 1.4rem;
+    left: 4rem; }
+
+@-webkit-keyframes img-scale {
+  50% {
+    -webkit-transform: scale(1) translate3d(0, 0, 0);
+    transform: scale(1) translate3d(0, 0, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 20px, 800px);
+    transform: translate3d(0, 20px, 800px); } }
+@-webkit-keyframes scale2 {
+  30% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-webkit-keyframes scale1 {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: .7; }
+  100% {
+    -webkit-transform: scale(10);
+    transform: scale(10);
+    opacity: 0; } }
+.zmiti-team-main-ui {
+  z-index: 1010;
+  background: #fcfff8;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-box-orient: vertical;
+  color: #6b5419;
+  opacity: 1; }
+  .zmiti-team-main-ui.team-enter-active, .zmiti-team-main-ui.team-leave-active {
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+  .zmiti-team-main-ui.team-enter, .zmiti-team-main-ui.team-leave-to {
+    opacity: 0; }
+  .zmiti-team-main-ui .zmiti-team-main {
+    color: #880d07;
+    margin-top: 1rem; }
+    .zmiti-team-main-ui .zmiti-team-main > h1 {
+      display: -webkit-box;
+      -webkit-box-align: center;
+      -webkit-box-pack: center;
+      -webkit-box-orient: horizontal;
+      width: 9.7rem;
+      font-weight: normal;
+      font-size: .6rem;
+      height: 2rem; }
+      .zmiti-team-main-ui .zmiti-team-main > h1 > div:nth-of-type(1), .zmiti-team-main-ui .zmiti-team-main > h1 > div:nth-of-type(3) {
+        margin-top: 40px; }
+    .zmiti-team-main-ui .zmiti-team-main > section {
+      font-size: .4rem;
+      width: 8rem;
+      margin: 0 auto;
+      height: 1rem;
+      line-height: 1rem; }
+      .zmiti-team-main-ui .zmiti-team-main > section.zmiti-copyright {
+        position: relative;
+        line-height: 1.6rem; }
+        .zmiti-team-main-ui .zmiti-team-main > section.zmiti-copyright:before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          background: rgba(0, 0, 0, 0.2);
+          left: 0;
+          top: 0; }
+      .zmiti-team-main-ui .zmiti-team-main > section span {
+        padding: 0 10px; }
+    .zmiti-team-main-ui .zmiti-team-main .zmiti-back {
+      background: #ebdfb5;
+      width: 2rem;
+      height: .7rem;
+      line-height: .7rem;
+      text-align: center;
+      border-radius: 8px;
+      margin: .5rem auto;
+      font-size: .4rem;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5); }
+
+/*# sourceMappingURL=index.css.map */
