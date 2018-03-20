@@ -65,12 +65,12 @@
 						</h1>
 						<section><span>出品人：</span><span>陈凯星</span><span>冯瑛冰</span></section>
 						<section><span>监制：</span><span>马书平</span></section>	
-						<section><span>策划：</span><span>葛素表</span><span>陈知春</span><span>曹建礼</span></section>
-						<section><span>统筹：</span><span>齐慧杰</span><span>徐蕊</span></section>
-						<section><span>编辑：</span><span>浦超</span><span>邱冰清</span></section>
+						<section><span>策划：</span><span>葛素表</span><span>陈知春</span><span>于卫亚</span><span>曹建礼</span><span style='opacity:0'>上</span><span style='opacity:0'>李代祥</span><span>李代祥</span><span>周年钧</span><span>何莉</span></section>
+						<section><span>统筹：</span><span>齐慧杰</span><span>徐蕊</span><span>周年均</span></section>
+						<section><span>编辑：</span>浦超</span><span>邱冰清</span><span>王绥翊</span><span>姜子炜</span><span>叶心可</span><span style='opacity:0'>黄南希</span><span>黄南希</span><span>徐祥达</span></section>
 						<section><span>制作：</span><span>马发展</span></section>
 						<section><span>技术支持：</span><span>麟腾传媒</span></section>
-						<section  style="margin-top: 30px" class="zmiti-copyright"><span>新华社新媒体中心、新华社云南分社、</span></section>
+						<section  style="margin-top: 20px" class="zmiti-copyright"><span>新华社新媒体中心、新华社云南分社、</span></section>
 						<section><span>新华社江苏分社</span></section>
 
 							

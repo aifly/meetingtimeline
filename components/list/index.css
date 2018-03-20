@@ -218,10 +218,9 @@ body {
         margin-top: 40px; }
     .zmiti-team-main-ui .zmiti-team-main > section {
       font-size: .4rem;
-      width: 7rem;
+      width: 8rem;
       margin: 0 auto;
-      height: 1rem;
-      line-height: 1rem; }
+      line-height: .7rem; }
       .zmiti-team-main-ui .zmiti-team-main > section.zmiti-copyright {
         position: relative;
         line-height: 1.6rem; }
@@ -235,7 +234,7 @@ body {
           top: 0;
           display: none; }
       .zmiti-team-main-ui .zmiti-team-main > section span {
-        padding: 0 6px; }
+        padding: 0 8px; }
     .zmiti-team-main-ui .zmiti-team-main .zmiti-back {
       background: #fff;
       color: #e05944;
