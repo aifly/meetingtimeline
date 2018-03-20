@@ -49,7 +49,38 @@
 			<div class="zmiti-sun">
 				<img :src="imgs.sun">
 			</div>
+
+			<div class="zmiti-team-btn" @touchend='showTeam = true'>制作团队</div>
+
+			<div class="zmiti-cotyright" hidden="">
+				<img :src="imgs.logo">
+				<span>新华社新媒体中心</span>
+			</div>
+
+			<transition name='team'>
+				<div v-if='showTeam' :style='{background:"#fff url("+imgs.teamBg+") no-repeat center top",backgroundSize:"cover"}' class="zmiti-team-main-ui lt-full" @touchend='showTeam = false'>
+					<div class="zmiti-team-main">
+						<h1>
+							<div>制作团队</div>
+						</h1>
+						<section><span>出品人：</span><span>陈凯星</span><span>冯瑛冰</span></section>
+						<section><span>监制：</span><span>马书平</span></section>	
+						<section><span>策划：</span><span>葛素表</span><span>陈知春</span><span>曹建礼</span></section>
+						<section><span>统筹：</span><span>齐慧杰</span><span>徐蕊</span></section>
+						<section><span>编辑：</span><span>浦超</span><span>邱冰清</span></section>
+						<section><span>制作：</span><span>马发展</span></section>
+						<section><span>技术支持：</span><span>麟腾传媒</span></section>
+						<section  style="margin-top: 30px" class="zmiti-copyright"><span>新华社新媒体中心、新华社云南分社、</span></section>
+						<section><span>新华社江苏分社</span></section>
+
+							
+						<div class="zmiti-back">返回</div>
+					</div>
+				</div>
+			</transition>
 		</div>
+
+		
 	</transition>
 </template>
 
@@ -105,9 +136,13 @@
 
 		    var  render =()=>{
 				zmitiRequestAnimationFrame(render);
-				if(!this.isStoped && this.imgList[this.index]){
+				if(!this.isStoped && this.imgList[this.index] && !this.showTeam){
 
 					this.imgList[this.index].scale +=0.01;
+
+				
+
+
 
 					if(this.imgList[this.index].scale>=1.4 && !this.imgList[this.index].stoped){
 						this.imgList[this.index].stoped = true;

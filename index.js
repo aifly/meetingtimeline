@@ -55,10 +55,10 @@ new Vue({
 		<Music   :obserable='obserable'></Music>
 		<List  v-if='show' :obserable='obserable'></List>
 		
-		<div  v-if='!loaded' :style='{background:"#158ae4"}' class='zmiti-loading lt-full'>
+		<div  v-if='!loaded' :style='{background:"#e05944"}' class='zmiti-loading lt-full'>
 			<div class='zmiti-loading-ui'>
 				 <a href="#">
-			  		<section class='zmiti-head' :style="{background:'url(./assets/images/logo.png) no-repeat center / cover'}"></section>
+			  		<section class='zmiti-head' :style="{background:'url('+imgs.logo+') no-repeat center / cover'}"></section>
 			        <div class="line1"></div>
 			        <div class="line2"></div>
 			        <div class="line3"></div>

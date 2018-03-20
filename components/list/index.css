@@ -128,8 +128,8 @@ body {
   .zmiti-list-main-ui .zmiti-info {
     position: absolute;
     width: 3rem;
-    left: .4rem;
-    top: .4rem;
+    left: .5rem;
+    bottom: .3rem;
     z-index: 10; }
   .zmiti-list-main-ui .zmiti-sun {
     position: absolute;
@@ -160,6 +160,32 @@ body {
     -webkit-transform: scale(10);
     transform: scale(10);
     opacity: 0; } }
+.zmiti-team-btn {
+  position: absolute;
+  color: #fffae0;
+  right: .5rem;
+  bottom: .2rem;
+  z-index: 12;
+  text-decoration: underline; }
+
+.zmiti-cotyright {
+  width: 3rem;
+  position: absolute;
+  left: .5rem;
+  bottom: .5rem;
+  text-align: center;
+  color: #fff;
+  font-size: .3rem;
+  z-index: 12;
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom; }
+  .zmiti-cotyright img {
+    margin: 0 auto .1rem;
+    width: 1rem;
+    display: block; }
+
 .zmiti-team-main-ui {
   z-index: 1010;
   background: #fcfff8;
@@ -167,15 +193,17 @@ body {
   -webkit-box-align: center;
   -webkit-box-pack: center;
   -webkit-box-orient: vertical;
-  color: #6b5419;
-  opacity: 1; }
+  color: #fffae0;
+  opacity: 1;
+  z-index: 1000;
+  -webkit-transform: translate3d(0, 0, 10px);
+  transform: translate3d(0, 0, 10px); }
   .zmiti-team-main-ui.team-enter-active, .zmiti-team-main-ui.team-leave-active {
     -webkit-transition: 0.5s;
     transition: 0.5s; }
   .zmiti-team-main-ui.team-enter, .zmiti-team-main-ui.team-leave-to {
     opacity: 0; }
   .zmiti-team-main-ui .zmiti-team-main {
-    color: #880d07;
     margin-top: 1rem; }
     .zmiti-team-main-ui .zmiti-team-main > h1 {
       display: -webkit-box;
@@ -190,7 +218,7 @@ body {
         margin-top: 40px; }
     .zmiti-team-main-ui .zmiti-team-main > section {
       font-size: .4rem;
-      width: 8rem;
+      width: 7rem;
       margin: 0 auto;
       height: 1rem;
       line-height: 1rem; }
@@ -204,11 +232,13 @@ body {
           height: 1px;
           background: rgba(0, 0, 0, 0.2);
           left: 0;
-          top: 0; }
+          top: 0;
+          display: none; }
       .zmiti-team-main-ui .zmiti-team-main > section span {
-        padding: 0 10px; }
+        padding: 0 6px; }
     .zmiti-team-main-ui .zmiti-team-main .zmiti-back {
-      background: #ebdfb5;
+      background: #fff;
+      color: #e05944;
       width: 2rem;
       height: .7rem;
       line-height: .7rem;
