@@ -71,7 +71,7 @@
 						<section><span>制作：</span><span>马发展</span></section>
 						<section><span>技术支持：</span><span>麟腾传媒</span></section>
 						<section  style="margin-top: 30px" class="zmiti-copyright"><span>新华社新媒体中心、新华社云南分社、</span></section>
-						<section><span>新华社江苏分社</span></section>
+						<section><span>新华社江苏分社联合出品</span></section>
 
 							
 						<div class="zmiti-back">返回</div>

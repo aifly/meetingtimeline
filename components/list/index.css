@@ -195,7 +195,6 @@ body {
   -webkit-box-orient: vertical;
   color: #fffae0;
   opacity: 1;
-  z-index: 1000;
   -webkit-transform: translate3d(0, 0, 10px);
   transform: translate3d(0, 0, 10px); }
   .zmiti-team-main-ui.team-enter-active, .zmiti-team-main-ui.team-leave-active {
@@ -218,12 +217,12 @@ body {
         margin-top: 40px; }
     .zmiti-team-main-ui .zmiti-team-main > section {
       font-size: .4rem;
-      width: 8rem;
+      width: 7rem;
       margin: 0 auto;
-      line-height: .7rem; }
+      height: 1rem;
+      line-height: 1rem; }
       .zmiti-team-main-ui .zmiti-team-main > section.zmiti-copyright {
-        position: relative;
-        line-height: 1.6rem; }
+        position: relative; }
         .zmiti-team-main-ui .zmiti-team-main > section.zmiti-copyright:before {
           content: '';
           position: absolute;
@@ -234,7 +233,7 @@ body {
           top: 0;
           display: none; }
       .zmiti-team-main-ui .zmiti-team-main > section span {
-        padding: 0 8px; }
+        padding: 0 6px; }
     .zmiti-team-main-ui .zmiti-team-main .zmiti-back {
       background: #fff;
       color: #e05944;
